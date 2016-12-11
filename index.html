@@ -120,6 +120,7 @@
                 if (count > 5) {
                     $("#readMore").html('<br/><h1 id="happy" style="font-size:100px;font-family:Comic Sans MS;white-space:nowrap;text-align:center;">Happy Christmas<sup><span class="glyphicon glyphicon-star" style="font-size:10px;"></span></sup></h1>');
                     $("#readMore").removeAttr("class");
+                    $("#finalMessage").html('<h3 style="color:white">If you like it read the message below</h3>');
                     scrollWin(0, 500)
                 }
             });
@@ -203,6 +204,7 @@ function scrollWin(x, y) {
                 </div>
 
                 <div id="readMore" class="btn btn-primary" style="color:white;margin-top:37px;font-size:20px;vertical-align:middle;" onclick="scrollWin(0, 250)">Climb Down...</div>
+                        <div id="finalMessage"></div>
             </div>
 
         </div>
